@@ -3,7 +3,7 @@ Version: 0.0.1
 Architecture: iphoneos-arm
 Maintainer: qwertyuiop1379 <thoffman8839@gmail.com>
 Depends: mobilesubstrate
-Filename: debs//com.qiop1379.powerdown_0.0.1_iphoneos-arm.deb
+Filename: ./debs/com.qiop1379.powerdown_0.0.1_iphoneos-arm.deb
 Size: 8630
 MD5sum: B6C71D099DFBFCEA9890B95E4C1B2F7A
 SHA1: 7DB1C499FDEDA820161E71E850A3CA90C03369C5
