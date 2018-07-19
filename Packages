@@ -9,7 +9,7 @@ MD5sum: B6C71D099DFBFCEA9890B95E4C1B2F7A
 SHA1: 7DB1C499FDEDA820161E71E850A3CA90C03369C5
 SHA256: CE2EE09C08F72BF4601FB5182FCE3AF83D0EAD864CD88323EEDDEFDAD881F91A
 Section: Tweaks
-Description: A rewritten version of PowerDown I made to run on newer jailbreaks
+Description: A rewritten version of PowerDown I made to run on newer jailbreaks (iOS 10.3-current)
 Author: qwertyuiop1379 <thoffman8839@gmail.com>
 Depiction: qwertyuiop1379.github.io/depic/com.qiop1379.powerdown/index.html
 Name: PowerDown
