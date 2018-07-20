@@ -1,12 +1,15 @@
 Package: com.qiop1379.powerdown
 Version: 0.0.1
-Section: Tweaks
-Maintainer: qwertyuiop1379 <thoffman8839@gmail.com>
 Architecture: iphoneos-arm
-Filename: ./debs/com.qiop1379.powerdown_0.0.1_iphoneos-arm.deb
+Maintainer: qwertyuiop1379 <thoffman8839@gmail.com>
+Depends: mobilesubstrate
+Filename: debs//com.qiop1379.powerdown_0.0.1_iphoneos-arm.deb
 Size: 8630
 MD5sum: B6C71D099DFBFCEA9890B95E4C1B2F7A
+SHA1: 7DB1C499FDEDA820161E71E850A3CA90C03369C5
+SHA256: CE2EE09C08F72BF4601FB5182FCE3AF83D0EAD864CD88323EEDDEFDAD881F91A
+Section: Tweaks
 Description: A rewritten version of PowerDown I made to run on iOS 10.3 - current.
-Name: PowerDown
 Author: qwertyuiop1379 <thoffman8839@gmail.com>
-Depiction:
+Depiction: http://decimation.github.io/Depic/<depicfoldername>/index.html
+Name: Tweakname
