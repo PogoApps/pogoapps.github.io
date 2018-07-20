@@ -1,1 +1,1 @@
-dpkg-scanpackages -m debs | bzip2 -c > Packages.bz2
+dpkg-scanpackages -m debs | bzip2 -c > Packages
