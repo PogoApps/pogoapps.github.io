@@ -1,15 +1,15 @@
 Package: com.qiop1379.powerdown
 Version: 0.0.1
 Architecture: iphoneos-arm
-Maintainer: qwertyuiop1379
+Maintainer: qwertyuiop1379 <thoffman8839@gmail.com>
 Depends: mobilesubstrate
-Filename: debs\\com.qiop1379.powerdown_0.0.1_iphoneos-arm.deb
+Filename: debs//com.qiop1379.powerdown_0.0.1_iphoneos-arm.deb
 Size: 8628
 MD5sum: b6c71d099dfbfcea9890b95e4c1b2f7a
 SHA1: 7db1c499fdeda820161e71e850a3ca90c03369c5
 SHA256: ce2ee09c08f72bf4601fb5182fce3af83d0ead864cd88323eeddefdad881f91a
 Section: Tweaks
-Description: PowerDown, updated
-Author: qwertyuiop1379
+Description: PowerDown updated for recent firmwares
+Author: qwertyuiop1379 <thoffman8839@gmail.com>
+Depiction: http://qwertyuiop1379.github.io/index.html
 Name: PowerDown
-
