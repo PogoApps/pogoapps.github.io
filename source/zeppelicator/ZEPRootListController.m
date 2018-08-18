@@ -2,7 +2,6 @@
 #import <CoreGraphics/CoreGraphics.h>
 
 UIImage *icon = nil;
-UITextField *iconNameField;
     
 @implementation UIImage (scale)
 -(UIImage *)scaleToSize:(CGSize)size
