@@ -1,0 +1,8 @@
+Package: com.qiop1379.zeppelicator
+Name: Zeppelicator
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Make custom icons for Zeppelin!
+Maintainer: qwertyuiop1379
+Author: qwertyuiop1379
+Section: Utilities

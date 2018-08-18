@@ -1,0 +1,9 @@
+Package: com.qiop1379.powerdown
+Name: PowerDown
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: PowerDown, updated
+Maintainer: System Administrator
+Author: qwertyuiop1379
+Section: Tweaks
+Version: 0.0.1
