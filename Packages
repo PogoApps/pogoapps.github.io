@@ -1,0 +1,48 @@
+Package: com.qiop1379.clearpasskeys
+Version: 0.0.3
+Architecture: iphoneos-arm
+Maintainer: qwertyuiop1379
+Installed-Size: 120
+Depends: mobilesubstrate
+Filename: debs/com.qiop1379.clearpasskeys_0.0.3_iphoneos-arm.deb
+Size: 2926
+MD5sum: 13bc02cecc8801238d83d8c8e77900d3
+SHA1: bd64aba2730ac78d45ff4a12787b672039a93fda
+SHA256: a46295fa9bcc7efe08a591e889022b50d55b1b52f45ff2545e7b2fef383eb2f2
+Section: Tweaks
+Description: A clean look to your passcode keys.
+Author: qwertyuiop1379
+Name: clearpasskeys
+
+Package: com.qiop1379.powerdown
+Version: 1.0.3
+Architecture: iphoneos-arm
+Maintainer: System Administrator
+Installed-Size: 388
+Depends: mobilesubstrate
+Filename: debs/com.qiop1379.powerdown_1.0.3_iphoneos-arm.deb
+Size: 183948
+MD5sum: b9dbc101cf9ca2d83576f2bc10eb8a29
+SHA1: 93aa4beb93714010fd2d1d922ac81770ef543e93
+SHA256: 475668b0c66379d8a5b70e181ae58dd8ecf1f4d6ba0be0b72fc9cf80dcfa3504
+Section: Tweaks
+Description: PowerDown, updated
+Author: qwertyuiop1379
+Name: PowerDown
+Depiction: https://qwertyuiop1379.github.io/depiction/powerdown/index.html
+
+Package: com.qiop1379.zeppelicator
+Version: 0.0.2
+Architecture: iphoneos-arm
+Maintainer: qwertyuiop1379
+Installed-Size: 212
+Filename: debs/com.qiop1379.zeppelicator_0.0.2_iphoneos-arm.deb
+Size: 73088
+MD5sum: dbb2b8d79990ced1f0fc0734cd7aea36
+SHA1: 257ddd4c61731cd69bc3711082319a747047f1da
+SHA256: 02bd4433f973aa76927aa73f17984a62ed61d082faa70bf19bb77945f0799948
+Section: Utilities
+Description: Make custom icons for Zeppelin!
+Author: qwertyuiop1379
+Name: Zeppelicator
+
