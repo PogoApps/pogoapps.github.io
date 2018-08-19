@@ -19,7 +19,7 @@ UIImage *icon = nil;
 - (NSArray *)specifiers
 {
 	if (!_specifiers)
-    {
+	{
 		_specifiers = [self loadSpecifiersFromPlistName:@"Root" target:self];
 	}
 
