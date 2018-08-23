@@ -6,27 +6,55 @@
 	<array>
 		<dict>
 			<key>cell</key>
-			<string>PSStaticTextCell</string>
-			<key>height</key>
-			<string>133</string>
-			<key>icon</key>
-			<string>banner.png</string>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Tweak Settings</string>
 		</dict>
 		<dict>
 			<key>cell</key>
-			<string>PSGroupCell</string>
-			<key>footerText</key>
-			<string>Images will be sized to 40 pixels tall.</string>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.qiop1379.powerdownprefs</string>
+			<key>key</key>
+			<string>respringEnabled</string>
+			<key>label</key>
+			<string>Respring slider enabled</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.qiop1379.powerdownprefs</string>
+			<key>key</key>
+			<string>rebootEnabled</string>
+			<key>label</key>
+			<string>LDRestart slider enabled</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.qiop1379.powerdownprefs</string>
+			<key>key</key>
+			<string>safeModeEnabled</string>
+			<key>label</key>
+			<string>Safe mode slider enabled</string>
 		</dict>
 		<dict>
 			<key>action</key>
-			<string>createIcon</string>
+			<string>respring</string>
 			<key>cell</key>
 			<string>PSButtonCell</string>
 			<key>label</key>
-			<string>Create new icon</string>
+			<string>Respring to apply</string>
 		</dict>
-        <dict>
+		<dict>
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>label</key>
@@ -64,6 +92,6 @@
 		</dict>
 	</array>
 	<key>title</key>
-	<string>Zeppelicator</string>
+	<string>PowerDown</string>
 </dict>
 </plist>
