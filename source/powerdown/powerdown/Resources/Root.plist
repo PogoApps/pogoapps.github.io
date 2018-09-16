@@ -24,15 +24,7 @@
 		</dict>
 		<dict>
 			<key>cell</key>
-			<string>PSSwitchCell</string>
-			<key>default</key>
-			<true/>
-			<key>defaults</key>
-			<string>com.qiop1379.powerdownprefs</string>
-			<key>key</key>
-			<string>rebootEnabled</string>
-			<key>label</key>
-			<string>LDRestart slider enabled</string>
+			<string>PSEditTextCell</string>
 		</dict>
 		<dict>
 			<key>cell</key>
@@ -45,6 +37,24 @@
 			<string>safeModeEnabled</string>
 			<key>label</key>
 			<string>Safe mode slider enabled</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Condenses the sliders into one changeable slider</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.qiop1379.powerdownprefs</string>
+			<key>key</key>
+			<string>powerTapMode</string>
+			<key>label</key>
+			<string>Power tap mode</string>
 		</dict>
 		<dict>
 			<key>action</key>
@@ -82,13 +92,25 @@
 		</dict>
 		<dict>
 			<key>action</key>
-			<string>GitHub</string>
+			<string>github</string>
 			<key>cell</key>
 			<string>PSButtonCell</string>
 			<key>icon</key>
 			<string>github.png</string>
 			<key>label</key>
 			<string>GitHub</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.qiop1379.powerdownprefs</string>
+			<key>key</key>
+			<string>rebootEnabled</string>
+			<key>label</key>
+			<string>LDRestart slider enabled</string>
 		</dict>
 	</array>
 	<key>title</key>

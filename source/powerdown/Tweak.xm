@@ -27,44 +27,28 @@
 _UIActionSlider *respringSlider;
 _UIActionSlider *rebootSlider;
 _UIActionSlider *safeModeSlider;
+
 NSMutableDictionary *prefs = [[NSMutableDictionary alloc] initWithContentsOfFile:@"/var/mobile/Library/Preferences/com.qiop1379.powerdownprefs.plist"];
-NSData *slider = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:@"https://i.imgur.com/ZcWNBEy.png"]];
-UIImage *sliderImage = [UIImage imageWithData:slider];
-bool respringEnabled = [[prefs objectForKey:@"respringEnabled"] boolValue];
-bool rebootEnabled = [[prefs objectForKey:@"rebootEnabled"] boolValue];
-bool safeModeEnabled = [[prefs objectForKey:@"safeModeEnabled"] boolValue]; 
 
 %hook SBPowerDownController
 -(void)orderFront
 {
     %orig;
-    if ([prefs objectForKey:@"respringEnabled"] == nil)
-    {
-        respringEnabled = NO;
-    }
-    if ([prefs objectForKey:@"rebootEnabled"] == nil)
-    {
-        rebootEnabled = NO;
-    }
-    if ([prefs objectForKey:@"safeModeEnabled"] == NO)
-    {
-        safeModeEnabled = NO;
-    }
     CGFloat yval = 150;
-    if (respringEnabled)
+    if ([[prefs objectForKey:@"respringEnabled"] boolValue] == YES|| [prefs objectForKey:@"respringEnabled"] == nil)
     {
         respringSlider = [[%c(_UIActionSlider) alloc] initWithFrame:CGRectMake(self.view.frame.size.width/2 - 200, yval, 400, 75)];
-        respringSlider.knobImage = [sliderImage scaleToSize:CGSizeMake(66, 66)];
+        respringSlider.knobImage = [[UIImage imageWithContentsOfFile:@"/Library/PreferenceBundles/PowerDown.bundle/respring.png"] scaleToSize:CGSizeMake(66, 66)];
         respringSlider.delegate = self;
         respringSlider.trackText = @"slide to respring";
         [self.view addSubview:respringSlider];
         yval += 100;
     }
 
-    if (rebootEnabled)
+    if ([[prefs objectForKey:@"rebootEnabled"] boolValue] == YES || [prefs objectForKey:@"rebootEnabled"] == nil)
     {
         rebootSlider = [[%c(_UIActionSlider) alloc] initWithFrame:CGRectMake(self.view.frame.size.width/2 - 200, yval, 400, 75)];
-        rebootSlider.knobImage = [sliderImage scaleToSize:CGSizeMake(66, 66)];
+        rebootSlider.knobImage = [[UIImage imageWithContentsOfFile:@"/Library/PreferenceBundles/PowerDown.bundle/reboot.png"] scaleToSize:CGSizeMake(66, 66)];
         rebootSlider.knobView.frame = CGRectMake(rebootSlider.frame.origin.x, rebootSlider.frame.origin.y, 66, 66);
         rebootSlider.delegate = self;
         rebootSlider.trackText = @"slide to ldrestart";
@@ -72,10 +56,10 @@ bool safeModeEnabled = [[prefs objectForKey:@"safeModeEnabled"] boolValue];
         yval += 100;
     }
 
-    if (safeModeEnabled)
+    if ([[prefs objectForKey:@"safeModeEnabled"] boolValue] == YES || [prefs objectForKey:@"safeModeEnabled"] == nil)
     {
         safeModeSlider = [[%c(_UIActionSlider) alloc] initWithFrame:CGRectMake(self.view.frame.size.width/2 - 200, yval, 400, 75)];
-        safeModeSlider.knobImage = [sliderImage scaleToSize:CGSizeMake(66, 66)];
+        safeModeSlider.knobImage = [[UIImage imageWithContentsOfFile:@"/Library/PreferenceBundles/PowerDown.bundle/safemode.png"] scaleToSize:CGSizeMake(66, 66)];
         safeModeSlider.delegate = self;
         safeModeSlider.trackText = @"slide to safe mode";
         [self.view addSubview:safeModeSlider];
@@ -100,7 +84,6 @@ bool safeModeEnabled = [[prefs objectForKey:@"safeModeEnabled"] boolValue];
     }
     if ([slider.trackText isEqual:@"slide to ldrestart"])
     {
-        //[[%c(FBSystemService) sharedInstance] shutdownAndReboot:YES];
         system("ldrestart");
     }
     if ([slider.trackText isEqual:@"slide to safe mode"])
