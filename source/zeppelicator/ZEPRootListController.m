@@ -43,7 +43,7 @@ UIImage *icon = nil;
         return;
     }
     [picker dismissViewControllerAnimated:YES completion:nil];
-    UIAlertController * alertController = [UIAlertController alertControllerWithTitle: @"Zeppelicator" message: @"Name icon" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle: @"Zeppelicator" message: @"Name icon" preferredStyle:UIAlertControllerStyleAlert];
     [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField)
     {
         textField.placeholder = @"Name";

@@ -11,27 +11,23 @@ long long style;
 }
 -(UIColor *)foregroundColor
 {
-    UIColor *orig = %orig;
-    if ([prefs objectForKey:@"enabled"] == NO)
+    if ([prefs objectForKey:@"enabled"] != NO)
     {
-        return orig;
-    }
-    if (style == 0)
-    {
-        if ([prefs objectForKey:@"darkContentColor"] == nil)
+        if (style == 0)
         {
-            return orig;
+            if ([prefs objectForKey:@"darkContentColor"] != nil)
+            {
+                return [UIColor colorFromHexString:[prefs objectForKey:@"darkContentColor"]];
+            }
         }
-        return [UIColor colorFromHexString:[prefs objectForKey:@"darkContentColor"]];
-    }
-    else
-    {
-        if ([prefs objectForKey:@"lightContentColor"] == nil)
+        else
         {
-            return orig;
+            if ([prefs objectForKey:@"lightContentColor"] != nil)
+            {
+                return [UIColor colorFromHexString:[prefs objectForKey:@"lightContentColor"]];
+            }
         }
-        return [UIColor colorFromHexString:[prefs objectForKey:@"lightContentColor"]];
     }
-    return orig;
+    return %orig;
 }
 %end
