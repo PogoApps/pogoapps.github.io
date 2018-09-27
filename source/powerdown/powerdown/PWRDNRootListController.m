@@ -11,11 +11,6 @@
 	return _specifiers;
 }
 
--(void)respring
-{
-    system("killall -9 SpringBoard");
-}
-
 -(void)reddit
 {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.reddit.com/user/qwertyuiop1379"]];

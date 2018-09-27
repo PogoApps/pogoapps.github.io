@@ -11,7 +11,7 @@
 		<key>detail</key>
 		<string>PWRDNRootListController</string>
 		<key>icon</key>
-		<string>stock.jpg</string>
+		<string>stock.png</string>
 		<key>isController</key>
 		<true/>
 		<key>label</key>

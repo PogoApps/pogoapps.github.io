@@ -3,8 +3,11 @@
 #import <_UIActionSlider.h>
 #import <_UIActionSliderDelegate.h>
 
-@interface SBPowerDownController : UIViewController <_UIActionSliderDelegate>
+@interface SBPowerDownController : UIViewController <_UIActionSliderDelegate, UIGestureRecognizerDelegate>
 -(void)actionSliderDidCompleteSlide:(id)arg1;
+@end
+
+@interface SBUIPowerDownView : UIView
 @end
 
 @implementation UIImage (scale)
@@ -21,18 +24,17 @@
 @interface FBSystemService
 +(id)sharedInstance;
 -(void)exitAndRelaunch:(BOOL)yes;
--(void)shutdownAndReboot:(BOOL)yes;
 @end
 
 _UIActionSlider *respringSlider;
 _UIActionSlider *rebootSlider;
 _UIActionSlider *safeModeSlider;
-
-NSMutableDictionary *prefs = [[NSMutableDictionary alloc] initWithContentsOfFile:@"/var/mobile/Library/Preferences/com.qiop1379.powerdownprefs.plist"];
+NSMutableDictionary *prefs;
 
 %hook SBPowerDownController
 -(void)orderFront
 {
+    prefs = [[NSMutableDictionary alloc] initWithContentsOfFile:@"/var/mobile/Library/Preferences/com.qiop1379.powerdownprefs.plist"];
     %orig;
     CGFloat yval = 150;
     if ([[prefs objectForKey:@"respringEnabled"] boolValue] == YES|| [prefs objectForKey:@"respringEnabled"] == nil)
@@ -84,7 +86,11 @@ NSMutableDictionary *prefs = [[NSMutableDictionary alloc] initWithContentsOfFile
     }
     if ([slider.trackText isEqual:@"slide to ldrestart"])
     {
-        system("ldrestart");
+        pid_t pid;
+        int status;
+        const char *args[] = {"ldRun", NULL};
+        posix_spawn(&pid, "/usr/bin/ldRun", NULL, NULL, (char* const*)args, NULL);
+        waitpid(pid, &status, WEXITED);
     }
     if ([slider.trackText isEqual:@"slide to safe mode"])
     {
