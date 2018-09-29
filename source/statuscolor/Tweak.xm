@@ -5,9 +5,8 @@ long long style;
 %hook UIStatusBarStyleRequest
 -(long long)style
 {
-    long long orig = %orig;
-    style = orig;
-    return orig;
+    style = %orig;
+    return style;
 }
 -(UIColor *)foregroundColor
 {
