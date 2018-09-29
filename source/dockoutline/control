@@ -1,9 +1,9 @@
 Package: com.qiop1379.dockoutline
 Name: DockOutline
-Depends: mobilesubstrate
-Version: 0.0.1
+Depends: mobilesubstrate, com.creaturesurvive.libcscolorpicker
+Version: 1.0.0
 Architecture: iphoneos-arm
-Description: An awesome MobileSubstrate tweak!
+Description: Turn the dock into an outline
 Maintainer: qwertyuiop1379
 Author: qwertyuiop1379
 Section: Tweaks
