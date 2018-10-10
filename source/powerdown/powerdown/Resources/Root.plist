@@ -20,6 +20,18 @@
 			<key>defaults</key>
 			<string>com.qiop1379.powerdownprefs</string>
 			<key>key</key>
+			<string>powerEnabled</string>
+			<key>label</key>
+			<string>Power slider enabled</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.qiop1379.powerdownprefs</string>
+			<key>key</key>
 			<string>respringEnabled</string>
 			<key>label</key>
 			<string>Respring slider enabled</string>
@@ -34,7 +46,7 @@
 			<key>key</key>
 			<string>rebootEnabled</string>
 			<key>label</key>
-			<string>Reboot slider enabled</string>
+			<string>LDRestart slider enabled</string>
 		</dict>
 		<dict>
 			<key>cell</key>
