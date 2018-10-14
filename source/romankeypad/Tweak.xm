@@ -48,7 +48,7 @@ NSMutableDictionary *prefs;
             roman.text = @"VII";
             break;
         case 7:
-            roman.text = @"IIX";
+            roman.text = @"VIII";
             break;
         case 8:
             roman.text = @"IX";
@@ -57,7 +57,7 @@ NSMutableDictionary *prefs;
             roman.text = @"*";
             break;
         case 10:
-            roman.text = @"0";
+            roman.text = [[prefs objectForKey:@"dash"] boolValue] == YES ? @"-" : @"0";
             break;
         case 11:
             roman.text = @"#";
@@ -114,13 +114,13 @@ NSMutableDictionary *prefs;
             roman.text = @"VII";
             break;
         case 7:
-            roman.text = @"IIX";
+            roman.text = @"VIII";
             break;
         case 8:
             roman.text = @"IX";
             break;
         case 10:
-            roman.text = [[prefs objectForKey:@"nulla"] boolValue] == YES ? @"nulla" : @"0";
+            roman.text = [[prefs objectForKey:@"dash"] boolValue] == YES ? @"-" : @"0";
             break;
         default:
             return %orig;

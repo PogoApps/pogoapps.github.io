@@ -72,9 +72,9 @@
 			<key>defaults</key>
 			<string>com.qiop1379.romankeypadprefs</string>
 			<key>key</key>
-			<string>nulla</string>
+			<string>dash</string>
 			<key>label</key>
-			<string>Replace 0 with 'nulla'</string>
+			<string>Replace 0 with -</string>
 		</dict>
 		<dict>
 			<key>cell</key>
