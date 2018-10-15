@@ -31,13 +31,29 @@ _UIActionSlider *rebootSlider;
 _UIActionSlider *safeModeSlider;
 NSMutableDictionary *prefs;
 
+%hook SBUIPowerDownView
+-(void)layoutSubviews
+{
+    prefs = [[NSMutableDictionary alloc] initWithContentsOfFile:@"/var/mobile/Library/Preferences/com.qiop1379.powerdownprefs.plist"];
+    %orig;
+    if ([[prefs objectForKey:@"powerEnabled"] boolValue] == NO && [prefs objectForKey:@"powerEnabled"] != nil)
+    {
+        [MSHookIvar<_UIActionSlider *>(self, "_actionSlider") removeFromSuperview];
+    }
+}
+%end
+
 %hook SBPowerDownController
 -(void)orderFront
 {
     prefs = [[NSMutableDictionary alloc] initWithContentsOfFile:@"/var/mobile/Library/Preferences/com.qiop1379.powerdownprefs.plist"];
     %orig;
     CGFloat yval = 150;
-    if ([[prefs objectForKey:@"respringEnabled"] boolValue] == YES|| [prefs objectForKey:@"respringEnabled"] == nil)
+    if ([[prefs objectForKey:@"powerEnabled"] boolValue] == NO && [prefs objectForKey:@"powerEnabled"] != nil)
+    {
+        yval = 50;
+    }
+    if ([[prefs objectForKey:@"respringEnabled"] boolValue] == YES || [prefs objectForKey:@"respringEnabled"] == nil)
     {
         respringSlider = [[%c(_UIActionSlider) alloc] initWithFrame:CGRectMake(self.view.frame.size.width/2 - 200, yval, 400, 75)];
         respringSlider.knobImage = [[UIImage imageWithContentsOfFile:@"/Library/PreferenceBundles/PowerDown.bundle/respring.png"] scaleToSize:CGSizeMake(66, 66)];
