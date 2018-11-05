@@ -1,0 +1,39 @@
+br {
+	display: block;
+	margin: 5px 0;
+	content: " ";
+}
+hr {
+	margin-top: 10px; margin-bottom: 10px;
+	margin-left: 5px; margin-right: 5px;
+}
+.vl {
+	position: absolute;
+	border-left: 1px solid lightgrey;
+	height: 600px;
+	left: 225px; top: 105px; right: 0px; bottom: 0px;
+}
+.top {
+	position: absolute;
+	left: 0; right: 0;
+	height: 100px;
+}
+.left {
+	position:absolute;
+	left:0; top: 100px; bottom: 0;
+	width: 225px;
+}
+.main {
+	position: absolute;
+	left: 225px; top: 110px; right: 0; bottom: 0;
+}
+#searchpackages {
+	background-image: url('file:///C:/Users/thoff/OneDrive/Documents/GitHub/qwertyuiop1379.github.io/assets/search.png');
+	background-position: 10px 12px;
+	background-repeat: no-repeat;
+	width: 500px;
+	font-size: 16px;
+	padding: 12px 20px 12px 40px;
+	border: 1px solid #ccc;
+	margin-bottom: 12px;
+}

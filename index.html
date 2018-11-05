@@ -1,20 +1,100 @@
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   	<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/sheet.css">
+	<script src="assets/wtfdoinamethisfile.js"></script>
     <title>qwertyuiop1379's repo</title>
+	</head>
     <body>
-        <div class="col-sm-8">
-            <h1>Henlo there</h1>
-            <p>This is my Cydia repo</p>
-            <p>Just add me on Cydia by going to the sources tab, pressing Edit, Add, and type http://qwertyuiop1379.github.io</p>
-            <p>This site is pretty barebones, since all the magic happens in Cydia.</p>
-            <form action="https://qwertyuiop1379.github.io/depiction">
-                <input type="submit" class="btn btn-primary" value="Tweaks"/>
-            </form>
-            <p> </p>
-            <form action="https://github.com/qwertyuiop1379/qwertyuiop1379.github.io/tree/master/source">
-                <input type="submit" class="btn btn-primary" value="Source code"/>
-            </form>
+    	<div class="top">
+    		<div class="col-sm">
+    			<h3 class="display-3">Qwertyuiop1379's repo</h3>
+    		</div>
+			<hr>
+    	</div>
+        <div class="left">
+			<div class="col">
+           		<br>
+            	<form action="cydia://url/https://cydia.saurik.com/api/share#?source=http://qwertyuiop1379.github.io">
+                	<input type="submit" class="btn btn-success btn-lg" value="Tap to add this repo to Cydia" style="width: 195px; white-space: normal; height: 80px;"/>
+            	</form>
+            	<br>
+				<form action="https://github.com/qwertyuiop1379/qwertyuiop1379.github.io/tree/master/source">
+					<input type="submit" class="btn btn-secondary btn-sm" value="Open source projects" style="width: 195px;"/>
+				</form>
+				<hr>
+				<form action="https://www.paypal.me/qwertyuiop1379">
+					<input type="submit" class="btn btn-primary btn-sm" value="Support me" style="width: 195px;"/>
+				</form>
+			</div>
+        </div>
+		<div class="vl"></div>
+        <div class="main">
+        	<div class="col-sm-12">
+        		<input type="text" id="searchpackages" onkeyup="trimresults()" placeholder="Search"/>
+        		<br>
+        		<code style="font-size: 25px;">$ cat ./packages</code>
+        		<br>
+        		<table id="packageslist" class="table">
+        			<tr class="head">
+        				<th>Name</th>
+        				<th>Version</th>
+        				<th>Description</th>
+        				<th>Size</th>
+        				<th>Bundle ID</th>
+        			</tr>
+        			<tr>
+        				<td>PowerDown</td>
+        				<td>1.1.2</td>
+        				<td>PowerDown updated for new iOS</td>
+        				<td>870 KB</td>
+        				<td>com.qiop1379.powerdown</td>
+        			</tr>
+        			<tr>
+        				<td>Zeppelicator</td>
+        				<td>0.0.2</td>
+        				<td>Make custom icons for Zeppelin!</td>
+        				<td>74 KB</td>
+        				<td>com.qiop1379.zeppelicator</td>
+        			</tr>
+        			<tr>
+        				<td>StatusColor</td>
+        				<td>0.0.1</td>
+        				<td>Color your status bar!</td>
+        				<td>143 KB</td>
+        				<td>com.qiop1379.statuscolor</td>
+        			</tr>
+        			<tr>
+        				<td>Fuck off, su</td>
+        				<td>1.0.0</td>
+        				<td>Always start in NewTerm2 as root</td>
+        				<td>702 B</td>
+        				<td>com.qiop1379.fuckoffsu</td>
+        			</tr>
+        			<tr>
+        				<td>NoBatteryChargingAnimation</td>
+        				<td>1.0.0</td>
+        				<td>Turn off the annoying battery charging animation</td>
+        				<td>3 KB</td>
+        				<td>com.qiop1379.nobatterycharginganimation</td>
+        			</tr>
+        			<tr>
+        				<td>DockOutline</td>
+        				<td>1.0.1</td>
+        				<td>Turn the dock into an outline</td>
+        				<td>6 KB</td>
+        				<td>com.qiop1379.dockoutline</td>
+        			</tr>
+        			<tr>
+        				<td>RomanKeypad</td>
+        				<td>1.1.1</td>
+        				<td>Change the buttons in the phone app to Roman numerals</td>
+        				<td>146 KB</td>
+        				<td>com.qiop1379.dockoutline</td>
+        			</tr>
+        		</table>
+        	</div>
         </div>
     </body>
 </html>
