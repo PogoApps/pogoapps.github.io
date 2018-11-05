@@ -10,7 +10,7 @@ hr {
 .vl {
 	position: absolute;
 	border-left: 1px solid lightgrey;
-	height: 600px;
+	height: 500px;
 	left: 225px; top: 105px; right: 0px; bottom: 0px;
 }
 .top {
