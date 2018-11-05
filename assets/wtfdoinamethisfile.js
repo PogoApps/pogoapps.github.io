@@ -1,6 +1,6 @@
 function trimresults()
 {
-	var input, filter, table, tr, td, i, j, tds, ths, matched;
+	var input, filter, tr, td, i, j, tds, ths, matched;
     input = document.getElementById("searchpackages");
     filter = input.value.toUpperCase();
     tr = document.getElementsByTagName("tr");
