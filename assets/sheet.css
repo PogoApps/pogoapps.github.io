@@ -7,12 +7,6 @@ hr {
 	margin-top: 10px; margin-bottom: 10px;
 	margin-left: 5px; margin-right: 5px;
 }
-.vl {
-	position: absolute;
-	border-left: 1px solid lightgrey;
-	height: 500px;
-	left: 225px; top: 105px; right: 0px; bottom: 0px;
-}
 .top {
 	position: absolute;
 	left: 0; right: 0;
@@ -25,7 +19,7 @@ hr {
 }
 .main {
 	position: absolute;
-	left: 225px; top: 110px; right: 0; bottom: 0;
+	left: 210px; top: 110px; right: 0; bottom: 0;
 }
 #searchpackages {
 	background-image: url('http://qwertyuiop1379.github.io/assets/search.png');
