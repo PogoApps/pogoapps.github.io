@@ -1,0 +1,11 @@
+Package: com.yourcompany.qdexec
+Name: qdexec
+Depends: 
+Architecture: iphoneos-arm
+Description: An awesome tool of some sort!!
+Maintainer: System Administrator
+Author: System Administrator
+Section: System
+Tag: role::hacker
+Version: 0.0.1-12+debug
+Installed-Size: 132
