@@ -58,7 +58,7 @@ tr:hover {
 	background-color: #ddd;
 }
 
-@media (max-resolution: 1dppx) {
+@media only screen and (max-width: 800px) {
 	th {
 		font-size: 75%;
 	}
