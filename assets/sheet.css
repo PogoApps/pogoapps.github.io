@@ -33,9 +33,19 @@ tr:hover {
 	
 	width: 225px;
 }
+
 .main {
 	position: absolute;
 	left: 210px; top: 110px; right: 0; bottom: 0;
+}
+
+@media only screen and (max-width: 500px) {
+	.desktop {
+		display: none;
+	}
+	.main {
+		left: 0; top: 10px;
+	}
 }
 
 .fullsize {
@@ -47,7 +57,7 @@ tr:hover {
 	background-image: url('http://qwertyuiop1379.github.io/assets/search.png');
 	background-position: 10px 12px;
 	background-repeat: no-repeat;
-	width: 500px;
+	width: 100%;
 	font-size: 16px;
 	padding: 12px 20px 12px 40px;
 	border: 1px solid #ccc;
