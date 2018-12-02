@@ -3,24 +3,46 @@ br {
 	margin: 5px 0;
 	content: " ";
 }
+
 hr {
 	margin-top: 10px; margin-bottom: 10px;
 	margin-left: 5px; margin-right: 5px;
 }
+
+a {
+	text-decoration: none;
+}
+
+img {
+	width: 300px;
+}
+
+tr:hover {
+	background-color: #eee;
+}
+
 .top {
 	position: absolute;
 	left: 0; right: 0;
 	height: 100px;
 }
+
 .left {
 	position:absolute;
 	left:0; top: 100px; bottom: 0;
+	
 	width: 225px;
 }
 .main {
 	position: absolute;
 	left: 210px; top: 110px; right: 0; bottom: 0;
 }
+
+.fullsize {
+	width: 100%;
+	text-align: left;
+}
+
 #searchpackages {
 	background-image: url('http://qwertyuiop1379.github.io/assets/search.png');
 	background-position: 10px 12px;
@@ -30,4 +52,7 @@ hr {
 	padding: 12px 20px 12px 40px;
 	border: 1px solid #ccc;
 	margin-bottom: 12px;
+}
+#tablehead {
+	background-color: #ddd;
 }
