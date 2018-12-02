@@ -39,7 +39,7 @@ tr:hover {
 	left: 210px; top: 110px; right: 0; bottom: 0;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 800px) {
 	.desktop {
 		display: none;
 	}
