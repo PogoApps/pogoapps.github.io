@@ -64,6 +64,7 @@ tr:hover {
 	}
 	td {
 		font-size: 50%;
+		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	}
 	.desktop {
 		display: none;
