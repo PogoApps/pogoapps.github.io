@@ -60,7 +60,7 @@ tr:hover {
 
 @media only screen and (max-width: 800px) {
 	th {
-		font-size: 75%;
+		font-size: 50%;
 	}
 	td {
 		font-size: 50%;
