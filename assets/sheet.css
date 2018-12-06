@@ -72,6 +72,7 @@ tr:hover {
 		left: 0; top: 10px;
 	}
 }
+
 @media only screen and (min-device-width: 1126px) {
 	.notdesktop {
 		display: none;
