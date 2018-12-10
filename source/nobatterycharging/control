@@ -1,9 +1,0 @@
-Package: com.qiop1379.nobatterycharginganimation
-Name: NoBatteryChargingAnimation
-Depends: mobilesubstrate
-Version: 1.0.0
-Architecture: iphoneos-arm
-Description: Turn off the annoying battery charging animation
-Maintainer: qwertyuiop1379
-Author: qwertyuiop1379
-Section: Tweaks
