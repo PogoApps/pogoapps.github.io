@@ -28,7 +28,7 @@ tr:hover {
 }
 
 .left {
-	position:absolute;
+	position: absolute;
 	left:0; top: 100px; bottom: 0;
 	
 	width: 225px;
@@ -59,17 +59,30 @@ tr:hover {
 }
 
 @media only screen and (max-device-width: 1125px) {
+	a {
+		width: 100%;
+		text-align: left;
+	}
+
 	th {
 		font-size: 75%;
 	}
+
 	td {
 		font-size: 75%;
 	}
+
 	.desktop {
 		display: none;
 	}
+
+	.left {
+		top: 40px;
+		width: 100%;
+	}
+
 	.main {
-		left: 0; top: 10px;
+		left: 0; top: 100px;
 	}
 }
 
